@@ -1,0 +1,12 @@
+# Test artifacts
+poem.md
+.ipynb_checkpoints/
+
+# Internal working docs — not yet ready for the repo
+claude-code-vllm-strat-findings.md
+context-window-and-positional-embeddings.md
+epic.md
+model-guide.md
+oc-cli-cheatsheet.md
+progress-tracker.md
+roadmap.md
