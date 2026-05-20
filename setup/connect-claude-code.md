@@ -1,6 +1,6 @@
 # Connect Claude Code to a KServe Model on RHOAI
 
-This guide walks through connecting Claude Code to a model already deployed via RHOAI's KServe model serving. For model deployment steps, see [deploy-model-kserve.md](deploy-model-kserve.md).
+This guide walks through connecting Claude Code to a model already deployed via RHOAI's KServe model serving. For model deployment steps, see [deploy-model.md](deploy-model.md).
 
 > **Prefer a runnable notebook?** These steps are also available as a Jupyter notebook: [connect-claude-code.ipynb](connect-claude-code.ipynb)
 
@@ -8,7 +8,7 @@ This guide walks through connecting Claude Code to a model already deployed via 
 
 ## Prerequisites
 
-- A model deployed via KServe with the vLLM ServingRuntime (see [deploy-model-kserve.md](deploy-model-kserve.md))
+- A model deployed via KServe with the vLLM ServingRuntime (see [deploy-model.md](deploy-model.md))
 - The KServe endpoint URL (RHOAI dashboard → Model Serving → your model → Inference endpoint)
 - A RHOAI workbench with terminal access
 - `oc` CLI installed and logged into the cluster (for granting permissions)
@@ -128,7 +128,7 @@ If you get responses and the file is created, the setup is complete: **Claude Co
 | `Auth conflict` warning | Both `ANTHROPIC_AUTH_TOKEN` and `ANTHROPIC_API_KEY` set | Unset `ANTHROPIC_API_KEY` |
 | Login screen appears | `CLAUDE_CODE_SKIP_AUTH_LOGIN` not set or API key format not recognized | Ensure API key starts with `sk-ant-` if using `ANTHROPIC_API_KEY` |
 
-For deployment-related issues (OOM crashes, GPU mismatches, args formatting), see [deploy-model-kserve.md](deploy-model-kserve.md).
+For deployment-related issues (OOM crashes, GPU mismatches, args formatting), see [deploy-model.md](deploy-model.md).
 
 ---
 

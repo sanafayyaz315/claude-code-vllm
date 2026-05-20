@@ -2,6 +2,9 @@
 poem.md
 .ipynb_checkpoints/
 
+# Binary docs
+*.docx
+
 # Internal working docs — not yet ready for the repo
 claude-code-vllm-strat-findings.md
 context-window-and-positional-embeddings.md
